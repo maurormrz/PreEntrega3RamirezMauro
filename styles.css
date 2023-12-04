@@ -26,4 +26,12 @@
     border-radius: 2px;
     border: 0.5px solid #ccc;
     margin: 0 auto; 
+    padding: 30px;
+}
+
+.mensaje1, .mensaje2, .mensaje3, .mensaje4, .mensaje5, .mensajeError {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--color-texto);
+  text-align: center;
+  vertical-align: middle;
 }

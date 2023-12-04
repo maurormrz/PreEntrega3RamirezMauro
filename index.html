@@ -11,38 +11,46 @@
     <div class="cabecera"><img src="/imagenes/logotvs.png" alt="logo"></div>
     <div class="contenedor">
 
-        <div id="pagina1" class="contenedor1 visible">
+        <div id="pagina1" class="mensaje1 visible">
             <h1>Ingrese nombre y apellido:</h1>
-            <p></p>
-            (inputs...)
+            <p>Nombre:</p> <input type="text" name="nombre" id="nombre">
+            <p>Apellido:</p> <input type="text" name="apellido" id="apellido">
+            <input type="button" value="Ingresar" id="ingreso">
         </div>
           
-        <div id="pagina2" class="contenedor2">
+        <div id="pagina2" class="mensaje2">
             <h1>Elección de TV</h1>
-            <p></p>
-            (inputs...)
+            <p>¡Bienvenido <span id="nombreMostrado"></span> <span id="apellidoMostrado"></span> a RAMIREZ TVs!</p>
+            <p>Por favor, selecciona la Televisión de tu preferencia:</p>
+            <br><p>1. TV Plasma 32 pulgadas: $30,000</p><input type="button" value="Seleccionar" id="tvPlasma">
+            <br><p>2. TV LCD 32 pulgadas: $60,000</p><input type="button" value="Seleccionar" id="tvLCD">
+            <br><p>3. TV LED 55 pulgadas: $140,000</p><input type="button" value="Seleccionar" id="tvLED">
         </div>
-        <div id="pagina3" class="contenedor3">
-            <h1>¿Seguir añadiendo otra TV?</h1>
-            <p></p>
-            (inputs...)
+
+        <div id="pagina3" class="mensaje3">
+            <h1>¿Deseas comprar otra TV?</h1>
+            <br>
+            <input type="button" value="Si" id="si"> <input type="button" value="No" id="no">
         </div>
           
-        <div id="pagina4" class="contenedor4">
+        <div id="pagina4" class="mensaje4">
             <h1>Elegir cuota</h1>
-            <p></p>
-            (inputs...)
-        </div>
-        <div id="pagina5" class="contenedor5">
-            <h1>Mensaje de Total a Pagar</h1>
-            <p></p>
-            (inputs...)
+            <p>Has seleccionado <span id="numTvsSeleccionadasPagina4"></span> TV(s). Total a pagar: $<span id="totalPagarPagina4"></span></p>
+            <p>Elige un método de pago:</p>
+            <p>1 Pago</p> <input type="button" value="Seleccionar" id="1pago">
+            <p>6 Cuotas</p> <input type="button" value="Seleccionar" id="6cuotas">
+            <p>12 Cuotas</p> <input type="button" value="Seleccionar" id="12cuotas">
         </div>
           
-        <div id="pagina6" class="contenedor6">
-            <h1>Mensaje de Error</h1>
-            <p></p>
-            (inputs...)
+
+        <div id="pagina5" class="mensaje5">
+            <h1>Mensaje de Total a Pagar</h1>
+            <p>Usted deberá de pagar el total de $<span id="totalPagarCuotasPagina5"></span> <span id="numCuotasPagina5"></span>.</p>
+        </div>          
+          
+        <div id="pagina6" class="mensajeError">
+            <h1>Error</h1>
+            <p>Opción Incorrecta. Recarga la página para intentarlo nuevamente.</p>
         </div>
 
     </div>
