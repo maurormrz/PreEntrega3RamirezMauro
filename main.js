@@ -96,4 +96,3 @@ document.addEventListener("DOMContentLoaded", function () {
       pagina5.style.display = "block";
     });
   });
-  
